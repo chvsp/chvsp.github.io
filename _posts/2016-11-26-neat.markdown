@@ -1,0 +1,11 @@
+---
+title:  "NEAT - An Intuition"
+date:   2016-10-26 01:09:00
+categories: [NEAT, Machine Learning]
+tags: [NEAT, Machine Learning]
+published: true
+---
+
+This post is primarily aimed at giving primitive and intuitive understanding of a genetic algorithm called **NeuroEvolution of Augmented Topologies** or NEAT for short.
+![pic](/images/neat.png)
+

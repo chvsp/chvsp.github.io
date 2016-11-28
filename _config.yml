@@ -1,0 +1,39 @@
+# Site settings
+title: Praveen Ch 
+description: 'Deep Learning Enthusiast - Teaching Machines Since 2016' 
+url: 'http://chvsp.github.io'
+baseurl: '/'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Praveen Ch'
+  email: chvsp972911@gmail.com
+  #twitter_username: 
+  #facebook_username: joshgerde
+  github_username:  chvsp
+  linkedin_username:  praveench
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
