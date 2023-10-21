@@ -2,16 +2,16 @@ url: https://y7kim.github.io
 baseurl: /agency-jekyll-theme/
 
 # Site settings
-title: Awesome Title
+title: 
 email: your-email@domain.com
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
+- name: Praveen Chavali
   pic: 1
-  position: Lead Designer
+  position: He's been dabbling in improv comedy for about 5 years, doing some stuff here and there—Mumbai, Munich, Berlin. Once tried to teach improv to a flock of pigeons. They weren't impressed, but he's still trying to find his comedic wings.
   social:
     - title: twitter
       url: #
@@ -20,9 +20,9 @@ people:
     - title: stack-overflow
       url: #
 
-- name: Larry Parker
+- name: Yash Bhotica
   pic: 2
-  position: Lead Marketer
+  position: A former lawyer who traded his gavel for giggles after moving to Bangalore. Unsurprisingly, his favorite improv game is "Objections Only." Makes you wonder if old habits die hard or just get funnier.
   social:
     - title: twitter
       url: #
@@ -31,9 +31,9 @@ people:
     - title: linkedin
       url: #
 
-- name: Diana Petersen
+- name: Akhil Harikumar
   pic: 3
-  position: Lead Developer
+  position: An improviser, dancer and filmmaker for whom improv isn't just an art; it's the ultimate life hack. When stuck in an improv scene? He dances his way out, turning awkward pauses into comedic gold. 
   social:
     - title: twitter
       url: #

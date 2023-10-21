@@ -265,11 +265,22 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+.peeche {
+    background-attachment: fixed;
+    background-image: url('{{ site.baseurl }}/img/bg.jpg');
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 header {
     text-align: center;
     color: #fff;
-    background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
+    background-attachment: fixed;
+    background-image: url('{{ site.baseurl }}/img/bg.jpg');
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -279,8 +290,8 @@ header {
 }
 
 header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 header .intro-text .intro-lead-in {
@@ -289,6 +300,7 @@ header .intro-text .intro-lead-in {
     font-size: 22px;
     font-style: italic;
     line-height: 22px;
+    color: black;
 }
 
 header .intro-text .intro-heading {
@@ -302,7 +314,7 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
+        padding-top: 120px;
         padding-bottom: 200px;
     }
 
@@ -864,4 +876,10 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
+}
+#logo {
+    border-radius: 50%; /* This will make the image circular */
+    overflow: hidden;   /* Ensures any part of the image outside the circle is hidden */
+    width: 200px;
+    height: 200px;
 }
