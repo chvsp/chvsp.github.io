@@ -8,8 +8,8 @@
 
 color:
   primary: fed136
-  secondary: 8bb2e4   
-  secondary-dark: 2e3d80
+  secondary: fec503   
+  secondary-dark: 333
   muted: 777
 
 # Font Families
