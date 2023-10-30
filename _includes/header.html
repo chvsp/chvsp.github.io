@@ -1,5 +1,5 @@
 <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #333;">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -49,11 +49,34 @@
                 <!-- <div class="intro-lead-in">Improv for all. Every Saturday!</div> -->
                 <div class="intro-heading">Improv for all, <br> Every Saturday!</div>
                 <!-- <h2>Upcoming Jam: 28 Oct</h2> -->
-                <div class="intro-lead-in">Upcoming Jam: 28 Oct 4:30 pm</div>
+                <div id="upcoming-jam" class="intro-lead-in">Upcoming Jam: 28 Oct 4:30 pm</div>
                 <p><br></p>
                 <a href="#schedule" class="page-scroll btn btn-xl">Register here &rarr;</a>
             </div>
         </div>
+
+        <script>
+            function getNextSaturdayFormatted() {
+                const today = new Date();
+        
+                // Find the next Saturday (6 represents Saturday)
+                const daysUntilNextSaturday = 6 - today.getDay();
+                const nextSaturday = new Date(today);
+                nextSaturday.setDate(today.getDate() + daysUntilNextSaturday);
+        
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                const formattedDate = nextSaturday.toLocaleDateString(undefined, options);
+        
+                const dateParts = formattedDate.split(' ');
+                const formattedWithComma = `${dateParts[1]} ${dateParts[0]}, ${dateParts[2]}`;
+        
+                return formattedWithComma;
+            }
+        
+            const nextSaturdayFormatted = getNextSaturdayFormatted();
+            document.getElementById('upcoming-jam').textContent = `Upcoming Jam: ${nextSaturdayFormatted} 4:30 pm`;
+        </script>
+        
     </header>
 <!--
         {% for page in site.pages %}
