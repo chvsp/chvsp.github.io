@@ -58,7 +58,13 @@
         <script>
             function getNextSaturdayFormatted() {
                 const today = new Date();
-        
+
+                const manualOverride = 'November 18, 2023';
+
+                if (manualOverride !== '') {
+                    return manualOverride;
+                }
+                
                 // Find the next Saturday (6 represents Saturday)
                 const daysUntilNextSaturday = 6 - today.getDay();
                 const nextSaturday = new Date(today);
