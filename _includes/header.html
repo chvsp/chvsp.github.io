@@ -59,7 +59,7 @@
             function getNextSaturdayFormatted() {
                 const today = new Date();
 
-                const manualOverride = '30 Dec';
+                const manualOverride = '';
 
                 if (manualOverride !== '') {
                     return manualOverride;
@@ -80,7 +80,7 @@
             }
         
             const nextSaturdayFormatted = getNextSaturdayFormatted();
-            document.getElementById('upcoming-jam').textContent = `Upcoming Jam: ${nextSaturdayFormatted} 4:00 pm`;
+            document.getElementById('upcoming-jam').textContent = `Upcoming Jam: ${nextSaturdayFormatted} 4:30 pm`;
         </script>
         
     </header>
